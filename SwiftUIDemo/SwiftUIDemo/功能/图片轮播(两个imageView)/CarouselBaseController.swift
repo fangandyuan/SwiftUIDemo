@@ -12,24 +12,26 @@ class CarouselBaseController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        view.backgroundColor = UIColor.white
+        
+        //添加轮播器
+        addCarouselView()
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    ///添加轮播器0, 100, 375, 180
+    func addCarouselView(){
+        let carouselView = ZWCarouselView(frame: CGRect(x: 20, y: 100, width: 375, height: 180))
+        carouselView.imageNames = ["CarouselImg1", "CarouselImg2", "CarouselImg3"]
+        carouselView.time = 1
+        view.addSubview(carouselView)
+        carouselView.delegate = self
     }
-    */
 
+}
+
+extension CarouselBaseController: ZWCarouselViewDelegate {
+    func clickImageView(image: UIImage, index: Int) {
+        print("\(index)????")
+    }
 }

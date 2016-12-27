@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7294DFDD1E03E6F90092534F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294DFDC1E03E6F90092534F /* WebViewController.swift */; };
+		7294DFDF1E03E7690092534F /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7294DFDE1E03E7690092534F /* index.html */; };
+		7294E0221E07D81E0092534F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E0211E07D81E0092534F /* TextViewController.swift */; };
+		7294E0241E0A22280092534F /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E0231E0A22280092534F /* TextFieldViewController.swift */; };
+		7294E02A1E0A54FD0092534F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E0291E0A54FD0092534F /* BaseViewController.swift */; };
+		7294E02C1E0A55450092534F /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E02B1E0A55450092534F /* PopoverViewController.swift */; };
+		7294E02E1E0A5B070092534F /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E02D1E0A5B070092534F /* PopoverAnimator.swift */; };
+		7294E0301E0A5D7D0092534F /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E02F1E0A5D7D0092534F /* PopoverPresentationController.swift */; };
+		7294E0331E0B709A0092534F /* ZWCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E0321E0B709A0092534F /* ZWCarouselView.swift */; };
+		7294E0351E0B70D00092534F /* CarouselBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E0341E0B70D00092534F /* CarouselBaseController.swift */; };
 		F360160C1E0397FB00BF71AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360160B1E0397FB00BF71AA /* AppDelegate.swift */; };
 		F360160E1E0397FB00BF71AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360160D1E0397FB00BF71AA /* ViewController.swift */; };
 		F36016131E0397FB00BF71AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36016121E0397FB00BF71AA /* Assets.xcassets */; };
@@ -14,6 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7294DFDC1E03E6F90092534F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7294DFDE1E03E7690092534F /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		7294E0211E07D81E0092534F /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextViewController.swift; path = SwiftUIDemo/UI/TextView/TextViewController.swift; sourceTree = SOURCE_ROOT; };
+		7294E0231E0A22280092534F /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		7294E0291E0A54FD0092534F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7294E02B1E0A55450092534F /* PopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		7294E02D1E0A5B070092534F /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
+		7294E02F1E0A5D7D0092534F /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
+		7294E0321E0B709A0092534F /* ZWCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWCarouselView.swift; sourceTree = "<group>"; };
+		7294E0341E0B70D00092534F /* CarouselBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselBaseController.swift; sourceTree = "<group>"; };
 		F36016081E0397FB00BF71AA /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F360160B1E0397FB00BF71AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F360160D1E0397FB00BF71AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,6 +53,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7294E0251E0A51E80092534F /* 功能 */ = {
+			isa = PBXGroup;
+			children = (
+				7294E0311E0A7B720092534F /* 图片轮播(两个imageView) */,
+				7294E0261E0A532B0092534F /* popoverVc */,
+			);
+			path = "功能";
+			sourceTree = "<group>";
+		};
+		7294E0261E0A532B0092534F /* popoverVc */ = {
+			isa = PBXGroup;
+			children = (
+				7294E0291E0A54FD0092534F /* BaseViewController.swift */,
+				7294E02B1E0A55450092534F /* PopoverViewController.swift */,
+				7294E02D1E0A5B070092534F /* PopoverAnimator.swift */,
+				7294E02F1E0A5D7D0092534F /* PopoverPresentationController.swift */,
+			);
+			path = popoverVc;
+			sourceTree = "<group>";
+		};
+		7294E0311E0A7B720092534F /* 图片轮播(两个imageView) */ = {
+			isa = PBXGroup;
+			children = (
+				7294E0341E0B70D00092534F /* CarouselBaseController.swift */,
+				7294E0321E0B709A0092534F /* ZWCarouselView.swift */,
+			);
+			path = "图片轮播(两个imageView)";
+			sourceTree = "<group>";
+		};
 		F36015FF1E0397FB00BF71AA = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +101,7 @@
 		F360160A1E0397FB00BF71AA /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7294E0251E0A51E80092534F /* 功能 */,
 				F360161D1E03999400BF71AA /* UI */,
 				F360160B1E0397FB00BF71AA /* AppDelegate.swift */,
 				F360160D1E0397FB00BF71AA /* ViewController.swift */,
@@ -243,6 +293,7 @@
 		F36016331E03999500BF71AA /* TextField */ = {
 			isa = PBXGroup;
 			children = (
+				7294E0231E0A22280092534F /* TextFieldViewController.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -250,6 +301,7 @@
 		F36016341E03999500BF71AA /* TextView */ = {
 			isa = PBXGroup;
 			children = (
+				7294E0211E07D81E0092534F /* TextViewController.swift */,
 			);
 			path = TextView;
 			sourceTree = "<group>";
@@ -257,6 +309,8 @@
 		F36016351E03999500BF71AA /* WebView */ = {
 			isa = PBXGroup;
 			children = (
+				7294DFDE1E03E7690092534F /* index.html */,
+				7294DFDC1E03E6F90092534F /* WebViewController.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -320,6 +374,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7294DFDF1E03E7690092534F /* index.html in Resources */,
 				F36016161E0397FB00BF71AA /* LaunchScreen.storyboard in Resources */,
 				F36016131E0397FB00BF71AA /* Assets.xcassets in Resources */,
 			);
@@ -332,8 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7294E0241E0A22280092534F /* TextFieldViewController.swift in Sources */,
+				7294E0351E0B70D00092534F /* CarouselBaseController.swift in Sources */,
 				F360160E1E0397FB00BF71AA /* ViewController.swift in Sources */,
+				7294E02C1E0A55450092534F /* PopoverViewController.swift in Sources */,
+				7294DFDD1E03E6F90092534F /* WebViewController.swift in Sources */,
 				F360160C1E0397FB00BF71AA /* AppDelegate.swift in Sources */,
+				7294E0221E07D81E0092534F /* TextViewController.swift in Sources */,
+				7294E02E1E0A5B070092534F /* PopoverAnimator.swift in Sources */,
+				7294E0331E0B709A0092534F /* ZWCarouselView.swift in Sources */,
+				7294E02A1E0A54FD0092534F /* BaseViewController.swift in Sources */,
+				7294E0301E0A5D7D0092534F /* PopoverPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.SwiftUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -462,7 +526,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftUIDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fangyuan.SwiftUIDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,6 +553,7 @@
 				F360161C1E0397FB00BF71AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

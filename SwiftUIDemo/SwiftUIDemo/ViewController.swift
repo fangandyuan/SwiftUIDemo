@@ -11,6 +11,8 @@ import UIKit
 let tabelViewCellId = "home";
 
 enum UIDemoType {
+    case CarouselView   //图片轮播
+//    case WebViewSuper   //通过WebViewJavascriptBridge进行交互
     case ActivityIndicator
     case AlertView
     case Button
@@ -35,6 +37,8 @@ enum UIDemoType {
     case TextField
     case TextView
     case WebView
+    case PopoverVc  //mosal弹出自定义控制器
+    
 }
 
 class ViewController: UITableViewController {
@@ -50,7 +54,7 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 24;
+        return 26;
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,11 +108,38 @@ class ViewController: UITableViewController {
             cell.textLabel?.text = "TextView";
         case UIDemoType.WebView.hashValue:
             cell.textLabel?.text = "WebView";
+        case UIDemoType.WebView.hashValue:
+            cell.textLabel?.text = "WebViewSuper";      //pod无法下载,暂时不做
+        case UIDemoType.PopoverVc.hashValue:
+            cell.textLabel?.text = "PopoverVc";      //自定义弹出框
+        case UIDemoType.CarouselView.hashValue:
+            cell.textLabel?.text = "CarouselView";      //图片轮播
+            
         default:
             cell.textLabel?.text = nil;
         }
         
         return cell;
+    }
+    
+    //点击不同的cell进去不同的控制器
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //获取cell里面的文字
+        let cell = tableView.cellForRow(at: indexPath)
+        switch cell!.textLabel!.text! {
+        case "WebView":
+            present(WebViewController(), animated: true, completion: nil)
+        case "TextView":
+            present(TextViewController(), animated: true, completion: nil)
+        case "TextField":
+            present(TextFieldViewController(), animated: true, completion: nil)
+        case "PopoverVc":
+            present(UINavigationController(rootViewController: BaseViewController()), animated: true, completion: nil)
+        case "CarouselView":
+            present(CarouselBaseController(), animated: true, completion: nil)
+        default:
+            print("没有匹配到该cell上的文字")
+        }
     }
     
     override var prefersStatusBarHidden: Bool {
