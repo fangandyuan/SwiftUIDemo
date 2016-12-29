@@ -37,23 +37,41 @@ class ZWCarouselView: UIView, UIScrollViewDelegate {
     var delegate: ZWCarouselViewDelegate?
     
     ///图片名称数组
-    var imageNames: [String]? {
+    var images: [AnyObject]? {
         didSet{
             
             //保证有图片显示
-            guard imageNames!.count >= 1 else {
+            guard images!.count >= 1 else {
                 print("给的图片不能少于1个")
                 return
             }
             
-            //通过传入的imageNames生成imageView并保存起来
-            for imageName in imageNames! {
-                let image = UIImage(named: imageName)
-                guard image != nil else {
-                    print("找不到对应的图片:"+imageName)
-                    return
+            //通过传入的images生成image数组并保存起来
+            for image in images! {
+                
+                if image.isKind(of: UIImage.self) == true {
+                    
+                    //当传入的为UIImage的时候,直接添加到数组里面
+                    imageArray.append(image as! UIImage)
+                    
+                }else if image is String == true {
+                    
+                    //传入的为字符串
+                    //如果字符串是以http开头的,说明是网络图片,那么需要下载,否则就在本地
+                    if image.hasPrefix("http") == true {
+                        //如果是网络图片，则先添加占位图片(占位图片肯定有)，下载完成后替换
+                        let placeHolderImg = UIImage(named: "CarouselImg1")!
+                        imageArray.append(placeHolderImg)
+                    } else {
+                        
+                        //如果不是网络图片那么直接生成图片并添加
+                        guard let newImage = UIImage(named: image as! String) else {
+                            print("找不到对应的图片, 请检查")
+                            return
+                        }
+                        imageArray.append(newImage)
+                    }
                 }
-                imageArray.append(image!)
             }
             
             //默认显示第一张图片

@@ -17,6 +17,8 @@
 		7294E0301E0A5D7D0092534F /* PopoverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E02F1E0A5D7D0092534F /* PopoverPresentationController.swift */; };
 		7294E0331E0B709A0092534F /* ZWCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E0321E0B709A0092534F /* ZWCarouselView.swift */; };
 		7294E0351E0B70D00092534F /* CarouselBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294E0341E0B70D00092534F /* CarouselBaseController.swift */; };
+		72FF20E01E1207FB00D19621 /* 2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 72FF20DF1E1207FB00D19621 /* 2.gif */; };
+		72FF20E41E120D1800D19621 /* Imge_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FF20E31E120D1800D19621 /* Imge_Extension.swift */; };
 		F360160C1E0397FB00BF71AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360160B1E0397FB00BF71AA /* AppDelegate.swift */; };
 		F360160E1E0397FB00BF71AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F360160D1E0397FB00BF71AA /* ViewController.swift */; };
 		F36016131E0397FB00BF71AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F36016121E0397FB00BF71AA /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		7294E02F1E0A5D7D0092534F /* PopoverPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverPresentationController.swift; sourceTree = "<group>"; };
 		7294E0321E0B709A0092534F /* ZWCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWCarouselView.swift; sourceTree = "<group>"; };
 		7294E0341E0B70D00092534F /* CarouselBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselBaseController.swift; sourceTree = "<group>"; };
+		72FF20DF1E1207FB00D19621 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		72FF20E31E120D1800D19621 /* Imge_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Imge_Extension.swift; sourceTree = "<group>"; };
 		F36016081E0397FB00BF71AA /* SwiftUIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F360160B1E0397FB00BF71AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F360160D1E0397FB00BF71AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,10 +80,35 @@
 		7294E0311E0A7B720092534F /* 图片轮播(两个imageView) */ = {
 			isa = PBXGroup;
 			children = (
+				72FF20DE1E1207FB00D19621 /* image */,
 				7294E0341E0B70D00092534F /* CarouselBaseController.swift */,
 				7294E0321E0B709A0092534F /* ZWCarouselView.swift */,
 			);
 			path = "图片轮播(两个imageView)";
+			sourceTree = "<group>";
+		};
+		72FF20DE1E1207FB00D19621 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				72FF20DF1E1207FB00D19621 /* 2.gif */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		72FF20E11E120A8500D19621 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				72FF20E21E120A8500D19621 /* gif-Image */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		72FF20E21E120A8500D19621 /* gif-Image */ = {
+			isa = PBXGroup;
+			children = (
+				72FF20E31E120D1800D19621 /* Imge_Extension.swift */,
+			);
+			path = "gif-Image";
 			sourceTree = "<group>";
 		};
 		F36015FF1E0397FB00BF71AA = {
@@ -101,6 +130,7 @@
 		F360160A1E0397FB00BF71AA /* SwiftUIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				72FF20E11E120A8500D19621 /* Tool */,
 				7294E0251E0A51E80092534F /* 功能 */,
 				F360161D1E03999400BF71AA /* UI */,
 				F360160B1E0397FB00BF71AA /* AppDelegate.swift */,
@@ -377,6 +407,7 @@
 				7294DFDF1E03E7690092534F /* index.html in Resources */,
 				F36016161E0397FB00BF71AA /* LaunchScreen.storyboard in Resources */,
 				F36016131E0397FB00BF71AA /* Assets.xcassets in Resources */,
+				72FF20E01E1207FB00D19621 /* 2.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +423,7 @@
 				F360160E1E0397FB00BF71AA /* ViewController.swift in Sources */,
 				7294E02C1E0A55450092534F /* PopoverViewController.swift in Sources */,
 				7294DFDD1E03E6F90092534F /* WebViewController.swift in Sources */,
+				72FF20E41E120D1800D19621 /* Imge_Extension.swift in Sources */,
 				F360160C1E0397FB00BF71AA /* AppDelegate.swift in Sources */,
 				7294E0221E07D81E0092534F /* TextViewController.swift in Sources */,
 				7294E02E1E0A5B070092534F /* PopoverAnimator.swift in Sources */,
